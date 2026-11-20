@@ -11,7 +11,7 @@
   <meta property="og:title" content="Swiss Sales — Be the business they come looking for.">
   <meta property="og:description" content="Sales by attraction, not pressure. Get found by the right people, make buying easy, and give customers a reason to come back.">
   <title>Swiss Sales — Be the business they come looking for.</title>
-  <link rel="icon" href="assets/crest.svg?v=2" type="image/svg+xml">
+  <link rel="icon" href="assets/crest-mark.svg?v=3" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
@@ -34,11 +34,33 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:400;margin:0;letter-spacing:-1.
 @media(max-width:480px){.shell{padding-left:22px;padding-right:22px}.brand-name{font-size:14px}.brand img{width:40px}.hero-copy{padding:62px 22px 70px}.hero h1{font-size:clamp(43px,12vw,55px);letter-spacing:-2.5px}.hero-copy>.sub{font-size:15px}.hero-art{min-height:400px}.hero-art .crest{width:115px;margin-bottom:23px}.hero-art h2{font-size:33px}.hero-art:before{width:390px;height:390px}.art-ring{width:300px;height:300px}.ticker-in span:nth-child(2){display:none}.ticker-in{justify-content:center}.section-pad{padding:72px 0}.work-card{padding:31px 27px}.work-card h3{font-size:27px}.proof-card{min-height:auto;padding:28px}.proof-card h3{font-size:29px}.proof-stats{grid-template-columns:1fr}.proof-stat{min-height:120px}.proof-stat strong{font-size:38px}.quiet{padding:75px 0}.contact-actions{padding:26px}.modal{padding:29px 23px}.footer-in{display:block}.footer-in>*{margin:0 0 12px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
 </style>
+
+<style>
+/* One cohesive hero, not a half-and-half layout */
+.hero{position:relative;background:radial-gradient(ellipse 45% 35% at 78% 16%,rgba(173,141,82,.075),transparent 100%),linear-gradient(135deg,#FAF9F6 0%,#F5F2EA 54%,#FAF9F6 100%);border-bottom:1px solid #E8E2D5;isolation:isolate}
+.hero::before{content:"";position:absolute;z-index:-1;left:50%;top:-380px;transform:translateX(-50%);width:950px;height:950px;border:1px solid rgba(173,141,82,.085);border-radius:50%;pointer-events:none}
+.hero::after{content:"";position:absolute;z-index:-1;left:50%;top:-280px;transform:translateX(-50%);width:690px;height:690px;border:1px solid rgba(173,141,82,.075);border-radius:50%;pointer-events:none}
+.hero-unified{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-height:735px;padding-top:68px;padding-bottom:76px;position:relative}
+.hero-seal{display:flex;justify-content:center;align-items:center;margin:0 0 27px;height:146px}
+.hero-seal img{display:block;width:112px;height:143px;object-fit:contain;filter:drop-shadow(0 7px 14px rgba(33,40,34,.045))}
+.hero-unified .label{justify-content:center;font-size:10px;letter-spacing:2.25px}
+.hero-unified .label:after{content:"";width:34px;height:1px;background:currentColor}
+.hero-unified h1{max-width:1000px;margin:28px 0 20px;line-height:1.08;letter-spacing:-3.7px;font-size:clamp(57px,6.25vw,90px)}
+.hero-unified h1 em{color:#a88954;font-style:italic}
+.hero-sub{max-width:690px;font-size:17px;line-height:1.77;color:#5E6864;margin:0 0 29px}
+.hero-unified .hero-cta{justify-content:center;gap:14px;display:flex;flex-wrap:wrap}
+.hero-principles{display:flex;align-items:center;justify-content:center;margin-top:46px;padding-top:21px;border-top:1px solid #DCD3C1;color:#59655e;letter-spacing:.45px;font-family:var(--serif);font-size:16px;gap:0}
+.hero-principles span{padding:0 24px;border-right:1px solid #C9BFAB}
+.hero-principles span:last-child{border-right:0}
+.hero-unified .hero-punch{margin:17px 0 0;font-size:11px;letter-spacing:.3px;color:#8B8577}
+@media(max-width:760px){.hero-unified{min-height:0;padding-top:60px;padding-bottom:68px}.hero-seal{height:114px;margin-bottom:18px}.hero-seal img{width:88px;height:113px}.hero-unified h1{font-size:clamp(50px,8.7vw,73px);letter-spacing:-2.6px;margin-top:25px}.hero-sub{font-size:16px}.hero-principles{margin-top:37px;flex-wrap:wrap;gap:11px 0;font-size:14px}.hero-principles span{padding:0 15px}}
+@media(max-width:480px){.hero-unified{padding-top:52px;padding-bottom:57px}.hero-unified h1{font-size:clamp(41px,10.8vw,54px);letter-spacing:-2.4px}.hero-break{display:none}.hero-unified .label{letter-spacing:1.3px;font-size:9px}.hero-unified .label:before,.hero-unified .label:after{width:14px}.hero-sub{font-size:15px}.hero-unified .hero-cta{width:100%;gap:10px}.hero-unified .hero-cta .btn{padding:12px 16px;flex:1;min-width:0;font-size:9px;gap:8px}.hero-principles{font-size:13px;gap:9px 0}.hero-principles span{padding:0 10px}.hero-principles span:nth-child(2){border-right:0}.hero-unified .hero-punch{line-height:1.5}}
+</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav" id="top"><div class="shell nav-inner">
-  <a class="brand" href="#top" aria-label="Swiss Sales home"><img src="assets/crest.svg?v=2" alt=""/><span class="brand-name">SWISS&nbsp; SALES</span></a>
+  <a class="brand" href="#top" aria-label="Swiss Sales home"><img src="assets/crest-mark.svg?v=3" alt=""/><span class="brand-name">SWISS&nbsp; SALES</span></a>
   <nav class="nav-links" id="navlinks" aria-label="Main navigation">
     <a href="#philosophy">The idea</a><a href="#what-we-do">What we do</a><a href="#proof">Results</a><a href="#approach">How I work</a>
   </nav>
@@ -46,22 +68,17 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:400;margin:0;letter-spacing:-1.
   <button class="menu-toggle" type="button" id="menubutton" aria-label="Open menu" aria-expanded="false" aria-controls="navlinks">☰</button>
 </div></header>
 <main id="main">
-<section class="hero" aria-label="Swiss Sales overview"><div class="hero-grid">
-  <div class="hero-copy"><div class="label">Sales by attraction. Not pressure.</div>
-    <h1>Be the business they <em>come looking for.</em></h1>
-    <p class="sub">The best customers don't need to be chased. They're already looking for something you offer. I help them find your business, feel good about choosing it, and have every reason to come back.</p>
+<section class="hero" aria-label="Swiss Sales overview">
+  <div class="shell hero-unified">
+    <div class="hero-seal"><img src="assets/crest.svg?v=3" alt="Swiss Sales ibex crest with Swiss cross and Prov 27:2" width="112" height="144"></div>
+    <div class="label">Sales by attraction. Not pressure.</div>
+    <h1>Be the business they<br class="hero-break"> <em>come looking for.</em></h1>
+    <p class="hero-sub">The best customers don't need to be chased. They're already looking for something you offer. I help them find your business, feel good about choosing it, and have every reason to come back.</p>
     <div class="hero-cta"><a class="btn" href="#what-we-do">See how it works <span aria-hidden="true">↗</span></a><a class="btn ghost" href="#proof">See a real example <span aria-hidden="true">→</span></a></div>
+    <div class="hero-principles"><span>Be worth finding.</span><span>Easy to choose.</span><span>Hard to forget.</span></div>
     <p class="hero-punch">No hard sell. No gimmicks. Just better customers and better sales.</p>
   </div>
-  <div class="hero-art" aria-label="Swiss Sales mark and philosophy">
-    <div class="art-line one"></div><div class="art-line two"></div><div class="art-ring"></div>
-    <div class="hero-art-inside"><img class="crest" src="assets/crest.svg?v=2" alt="Swiss Sales ibex shield with a small Swiss cross and Prov 27:2"/>
-      <div class="art-eyebrow">The Swiss Sales philosophy</div>
-      <h2>Be worth finding.<br/><em>Easy to choose.</em><br/>Hard to forget.</h2>
-      <div class="microline"></div><div class="art-bottom">Quality earns attention</div>
-    </div>
-  </div>
-</div></section>
+</section>
 <div class="ticker"><div class="shell ticker-in"><span>The right customers</span><span>The right reasons</span><span>More lasting sales</span></div></div>
 <section id="philosophy" class="section-pad"><div class="shell philosophy">
   <div><div class="label">The thinking behind the name</div><h2>What I noticed in <em>Switzerland.</em></h2><div class="chapter">A different kind of selling</div></div>
@@ -124,7 +141,7 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:400;margin:0;letter-spacing:-1.
  <div class="contact-actions"><h3>Tell me about your business.</h3><p>What do you sell, and what kind of customers would you love to have more of?</p><button class="btn gold" id="contact-open" type="button">Start a conversation <span>↗</span></button><small>Preview only: the contact form is ready for design review; it still needs your preferred email or booking link before launch.</small></div>
 </div></section>
 </main>
-<footer class="site-footer"><div class="shell footer-in"><div class="foot-brand"><img src="assets/crest.svg?v=2" alt=""/> SWISS SALES</div><div class="note">Good work. The right customers. Sales by attraction.</div><a href="#top">Back to top ↑</a></div></footer>
+<footer class="site-footer"><div class="shell footer-in"><div class="foot-brand"><img src="assets/crest-mark.svg?v=3" alt=""/> SWISS SALES</div><div class="note">Good work. The right customers. Sales by attraction.</div><a href="#top">Back to top ↑</a></div></footer>
 <div class="modal-backdrop" id="contact-modal" role="dialog" aria-modal="true" aria-labelledby="contact-title" aria-hidden="true"><div class="modal"><button class="close" type="button" id="contact-close" aria-label="Close">×</button><div class="label">Let's talk</div><h3 id="contact-title">Start with what you sell.</h3><p>This preview can prepare a note about your business. Once a contact address is added, the live site can send it directly.</p><form id="contact-form"><label for="name">Your name</label><input id="name" name="name" type="text" autocomplete="name" required placeholder="Jane Smith"><label for="email">Your email</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="jane@business.com"><label for="details">A little about your business</label><textarea id="details" name="details" required placeholder="What you sell, your website, and where you'd like to grow."></textarea><button class="btn" type="submit">Copy my introduction ↗</button><div class="feedback" id="form-feedback" aria-live="polite"></div><p class="form-note">Demo only: this form does not transmit or store your information.</p></form></div></div>
 <script>
 (()=>{
