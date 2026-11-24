@@ -1,0 +1,34 @@
+name: Render original Swiss Sales logo previews
+on:
+  push:
+    paths:
+      - "scripts/render-brand-previews.py"
+      - ".github/workflows/render-brand-previews.yml"
+      - "assets/logo-lockup.svg"
+      - "assets/crest-mark.svg"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  brand-images:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install "CairoSVG>=2.7,<3" "Pillow>=10,<12"
+      - run: python scripts/render-brand-previews.py
+      - name: Commit generated image assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/favicon-512.png assets/social-preview.png
+          if ! git diff --cached --quiet; then
+            git commit -m "Generate PNG previews from existing Swiss Sales logo artwork"
+            git push
+          fi
